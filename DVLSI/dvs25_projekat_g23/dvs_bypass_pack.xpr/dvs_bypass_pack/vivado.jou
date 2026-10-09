@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Jul 29 17:55:22 2026
+# Process ID         : 6832
+# Current directory  : C:/Users/vasas/AppData/Roaming/Xilinx/Vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1212
+# Log file           : C:/Users/vasas/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file       : C:/Users/vasas/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On         : windows_rip
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+# CPU Frequency      : 2808 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16994 MB
+# Swap memory        : 11414 MB
+# Total Virtual      : 28409 MB
+# Available Virtual  : 8663 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+generate_target all [get_files  E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd]
+export_ip_user_files -of_objects [get_files E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd]
+launch_runs axi_block_design_acc_image_filter_0_1_synth_1 -jobs 8
+wait_on_run axi_block_design_acc_image_filter_0_1_synth_1
+export_simulation -lib_map_path [list {modelsim=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/modelsim} {questa=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/questa} {riviera=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/riviera} {activehdl=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/activehdl}] -of_objects [get_files E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd] -directory E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files/sim_scripts -ip_user_files_dir E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files -ipstatic_source_dir E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+generate_target all [get_files  E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd]
+export_ip_user_files -of_objects [get_files E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd]
+launch_runs axi_block_design_acc_image_filter_0_1_synth_1 -jobs 8
+wait_on_run axi_block_design_acc_image_filter_0_1_synth_1
+export_simulation -lib_map_path [list {modelsim=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/modelsim} {questa=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/questa} {riviera=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/riviera} {activehdl=E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.cache/compile_simlib/activehdl}] -of_objects [get_files E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.srcs/sources_1/bd/axi_block_design/axi_block_design.bd] -directory E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files/sim_scripts -ip_user_files_dir E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files -ipstatic_source_dir E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:/dvs_project_u16/dvs_bypass_pack/axi_final1_wrapper.xsa
+set_property PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/dvs_project_u16/dvs_bypass_pack/dvs_bypass_pack.runs/impl_1/axi_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+archive_project E:/dvs_project_u16/dvs_project_final.xpr.zip -temp_dir C:/Users/vasas/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6832-windows_rip -force -exclude_run_results -include_local_ip_cache
+archive_project E:/dvs_project_u16/dvs_predaja/dvs_bypass_pack.xpr.zip -temp_dir E:/dvs_project_u16/dvs_predaja -force -exclude_run_results -include_local_ip_cache

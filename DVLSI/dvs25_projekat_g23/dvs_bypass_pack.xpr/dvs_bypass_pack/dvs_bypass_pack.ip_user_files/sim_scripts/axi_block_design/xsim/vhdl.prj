@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/axi_block_design/ip/axi_block_design_axi_dma_0_1/sim/axi_block_design_axi_dma_0_1.vhd" \
+"../../../bd/axi_block_design/ip/axi_block_design_axi_smc_1/bd_0/ip/ip_1/sim/bd_22c4_psr_aclk_0.vhd" \
+"../../../bd/axi_block_design/ip/axi_block_design_rst_ps7_0_100M_1/sim/axi_block_design_rst_ps7_0_100M_1.vhd" \
+"../../../bd/axi_block_design/ip/axi_block_design_axi_timer_0_1/sim/axi_block_design_axi_timer_0_1.vhd" \
+"../../../bd/axi_block_design/ip/axi_block_design_acc_image_filter_0_1/sim/axi_block_design_acc_image_filter_0_1.vhd" \
+"../../../bd/axi_block_design/sim/axi_block_design.vhd" \
+
+# Do not sort compile order
+nosort

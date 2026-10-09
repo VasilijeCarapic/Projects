@@ -1,0 +1,46 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado_2025_1/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot grayscale_filter_behav xil_defaultlib.grayscale_filter -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.filter_constants_pkg
+Compiling package xil_defaultlib.filter_config
+Compiling package xil_defaultlib.ram_package
+Compiling package xil_defaultlib.arr_types
+Compiling package xil_defaultlib.my_states_pkg
+Compiling package xil_defaultlib.constants
+Compiling package xil_defaultlib.window_pkg
+Compiling package xil_defaultlib.alu_radius_fill_pkg
+Compiling package xil_defaultlib.alu_pkg
+Compiling package xil_defaultlib.alu_window_shift_pkg
+Compiling package xil_defaultlib.compute_win_pkg
+Compiling architecture rtl of entity xil_defaultlib.address_gen [address_gen_default]
+Compiling architecture rtl of entity xil_defaultlib.window_engine [window_engine_default]
+Compiling architecture behavioral of entity xil_defaultlib.simple_dual_port_ram [\simple_dual_port_ram(g_ram_widt...]
+Compiling architecture behavioral of entity xil_defaultlib.convolution_core [convolution_core_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_control_gen [axi_control_gen_default]
+Compiling architecture rtl of entity xil_defaultlib.valid_delay_line [\valid_delay_line(depth=14)\]
+Compiling architecture rtl of entity xil_defaultlib.pixel_packer [pixel_packer_default]
+Compiling architecture rtl of entity xil_defaultlib.output_controller [output_controller_default]
+Compiling architecture rtl of entity xil_defaultlib.grid_system [grid_system_default]
+Compiling architecture rtl of entity xil_defaultlib.coordinate_tracker [coordinate_tracker_default]
+Compiling architecture rtl of entity xil_defaultlib.alu_logic [alu_logic_default]
+Compiling architecture rtl of entity xil_defaultlib.filter_fsm [filter_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.params_loader [params_loader_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_write_slave [axi_write_slave_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_read_slave [axi_read_slave_default]
+Compiling architecture rtl of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_stream_io_block [axi_stream_io_block_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_controller [axi_controller_default]
+Compiling architecture rtl of entity xil_defaultlib.acc_image_filter [acc_image_filter_default]
+Compiling architecture behavioral of entity xil_defaultlib.grayscale_filter
+Built simulation snapshot grayscale_filter_behav

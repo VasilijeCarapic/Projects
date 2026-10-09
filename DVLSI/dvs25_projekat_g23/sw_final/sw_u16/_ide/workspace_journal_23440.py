@@ -1,0 +1,18 @@
+# 2026-07-23T18:21:10.293245700
+import vitis
+
+client = vitis.create_client()
+client.set_workspace(path="sw_test_ploca")
+
+platform = client.get_component(name="sw_test_platform")
+status = platform.build()
+
+comp = client.get_component(name="sw_app_ploca")
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+vitis.dispose()
+
