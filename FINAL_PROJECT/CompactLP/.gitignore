@@ -1,0 +1,17 @@
+# STM32CubeIDE / Eclipse
+.metadata/
+STM32/.metadata/
+STM32/Debug/
+STM32/Release/
+*.o
+*.elf
+*.list
+*.map
+*.cyclo
+*.su
+*.d
+
+# PlatformIO (za ESP)
+.pio/
+
+STM32/.settings/
